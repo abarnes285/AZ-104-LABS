@@ -18,7 +18,7 @@ This lab walks through deploying two Azure VMs in an availability set with secur
 ### 1. Create a Resource Group
 `RG-ProdVM-EastUS`
 
-![Resource Group Setup]([VM Deployment /Images/image 1.png](https://github.com/abarnes285/AZ-104-LABS/blob/af61c01697e8038f801d7ecdb029e798160278c1/VM%20Deployment%20/Images/image%201.png)
+![Resource Group Setup]([VM Deployment /Images/image 1.png](https://github.com/abarnes285/AZ-104-LABS/blob/af61c01697e8038f801d7ecdb029e798160278c1/VM%20Deployment%20/Images/image%201.png))
 
 ---
 
