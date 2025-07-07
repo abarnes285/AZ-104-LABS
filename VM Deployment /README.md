@@ -25,7 +25,7 @@ This lab walks through deploying two Azure VMs in an availability set with secur
 ### 2. Create a Virtual Network (VNet)
 `VNET-PROD`
 
-![VNet Setup](images/vnet-setup.png)
+![VNet Setup](https://github.com/abarnes285/AZ-104-LABS/blob/c9d574c876856c6d358163ba6ac3bfe912405a3e/VM%20Deployment%20/Images/image%201.png)
 
 ---
 
@@ -33,7 +33,9 @@ This lab walks through deploying two Azure VMs in an availability set with secur
 - Allow inbound RDP (TCP 3389) and SSH (TCP 22)
 - Associate with the appropriate subnet
 
-![NSG Rules](images/nsg-rules.png)
+![NSG Rules](https://github.com/abarnes285/AZ-104-LABS/blob/c9d574c876856c6d358163ba6ac3bfe912405a3e/VM%20Deployment%20/Images/image%202.png)
+
+![NSG Subnet](https://github.com/abarnes285/AZ-104-LABS/blob/c9d574c876856c6d358163ba6ac3bfe912405a3e/VM%20Deployment%20/Images/image%203.png)
 
 ---
 
