@@ -30,8 +30,7 @@ This lab focuses on configuring an Azure Storage Account with secure access and 
 - **Region:** Same as Resource Group
 - **Enabled SFTP**
 
-![Storage Account](images/storage-account.png)
-![SFTP Enabled](images/sftp-enabled.png)
+![Storage Account](https://github.com/abarnes285/AZ-104-LABS/blob/511c7b79a05f375c3cd21edaf2eb15d5e810c1fe/Azure%20Storage%20account%20/Images/image%202.png)
 
 ---
 
@@ -40,9 +39,9 @@ This lab focuses on configuring an Azure Storage Account with secure access and 
 - Uploaded a PNG file
 - Changed access tier to **Cool**
 
-![Container](images/container.png)
-![File Upload](images/file-upload.png)
-![Tier Changed](images/tier-change.png)
+![Container](https://github.com/abarnes285/AZ-104-LABS/blob/511c7b79a05f375c3cd21edaf2eb15d5e810c1fe/Azure%20Storage%20account%20/Images/image%203.png)
+![File Upload](https://github.com/abarnes285/AZ-104-LABS/blob/511c7b79a05f375c3cd21edaf2eb15d5e810c1fe/Azure%20Storage%20account%20/Images/image%204.png)
+![Tier Changed](https://github.com/abarnes285/AZ-104-LABS/blob/511c7b79a05f375c3cd21edaf2eb15d5e810c1fe/Azure%20Storage%20account%20/Images/image%205.png)
 
 ---
 
@@ -51,9 +50,9 @@ This lab focuses on configuring an Azure Storage Account with secure access and 
 - Initial token failed to work
 - Resolved by generating a token at the **container level**
 
-![SAS Token Config](images/sas-token.png)
-![SAS Token Error](images/sas-error.png)
-![Working SAS Token](images/working-sas.png)
+![SAS Token Config](https://github.com/abarnes285/AZ-104-LABS/blob/511c7b79a05f375c3cd21edaf2eb15d5e810c1fe/Azure%20Storage%20account%20/Images/image%206.png)
+![SAS Token Error](https://github.com/abarnes285/AZ-104-LABS/blob/511c7b79a05f375c3cd21edaf2eb15d5e810c1fe/Azure%20Storage%20account%20/Images/image%208.png)
+![Working SAS Token](https://github.com/abarnes285/AZ-104-LABS/blob/511c7b79a05f375c3cd21edaf2eb15d5e810c1fe/Azure%20Storage%20account%20/Images/image%209.png)
 
 ---
 
@@ -61,7 +60,7 @@ This lab focuses on configuring an Azure Storage Account with secure access and 
 - Enabled **soft deletion** for blobs (7-day retention)
 - Configured lifecycle rule to archive older blobs
 
-![Soft Delete Enabled](images/soft-delete.png)
+![Soft Delete Enabled](https://github.com/abarnes285/AZ-104-LABS/blob/511c7b79a05f375c3cd21edaf2eb15d5e810c1fe/Azure%20Storage%20account%20/Images/image%2010.png)
 
 ---
 
