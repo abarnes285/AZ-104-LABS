@@ -190,7 +190,7 @@ When attempting to connect, I received a connection error:
 
  ✅ I was successfully able to connect to Azure from my Mac using OpenVPN.
 
-###✅ Final Outcome
+### ✅ Final Outcome
 Verified:
 
 Hub-to-Spoke connectivity
@@ -207,5 +207,5 @@ Certificate handling
 
 VPN troubleshooting
 
-###📄 Summary
+### 📄 Summary
 This lab gave me hands-on experience in deploying secure hybrid connectivity in Azure using a hub-spoke network model and VPN Gateway. It required troubleshooting certificate formats, NSG rules, and tunnel types—all of which deepened my understanding of Azure networking.
