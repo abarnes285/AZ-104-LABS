@@ -1,7 +1,7 @@
 # 🚀 AZ-104 Lab Portfolio: Hands-On Cloud Administrator Projects
 
 ## 🧾 Purpose
-This repository documents my hands-on lab work while preparing for the **AZ-104: Microsoft Azure Administrator** certification. My goal is to deepen my practical understanding of Azure services and gain real-world experience as a cloud administrator.
+This repository documents my hands-on lab work as I prepare for the **AZ-104: Microsoft Azure Administrator** certification. My goal is to deepen my practical understanding of Azure services and gain real-world experience as a cloud administrator.
 
 Each lab simulates real scenarios that an Azure Admin would encounter — from provisioning virtual machines to configuring identity, networking, and monitoring.
 
@@ -15,52 +15,49 @@ Each lab simulates real scenarios that an Azure Admin would encounter — from p
 - Apply NSGs to restrict access (RDP/SSH)
 - Enable auto-shutdown and performance monitoring
 
-**Skills:** VM provisioning, NSG setup, IP configuration, cost optimization, performance alerting
+---
+
+### 2. **Azure Storage Account + RBAC**
+- Create a storage account with proper redundancy
+- Upload blob files
+- Create a file share for SMB access
+- Create a SAS token with limited permissions
+- Assign RBAC roles
+- Set lifecycle management to archive old data
+
 
 ---
 
-### 2. **Azure Storage Management**
-- Deploy storage accounts with correct redundancy
-- Configure Blob, File, and Table services
-- Implement shared access signatures (SAS) and lifecycle policies
+### 3. **Virtual Network + VPN Gateway**
+-  Build hub-spoke VNet architecture
+-  Deploy VPN Gateway in the hub
+-  Connect to Azure via P2S VPN
+-  Test access between VNets
+-  Apply NSGs for segmentation
 
-**Skills:** Azure Storage, data retention policies, secure data access
-
----
-
-### 3. **Azure Identity & Access Control**
-- Configure role-based access control (RBAC)
-- Create custom roles and assign permissions
-- Integrate Azure AD users and groups
-
-**Skills:** IAM, RBAC, Azure Active Directory, least privilege model
 
 ---
 
-### 4. **Networking & Connectivity**
-- Create and associate subnets, VNets, and route tables
-- Configure VNet peering
-- Set up Azure VPN Gateways and Azure DNS
+### 4. **Azure Identity  + Azure AD**
+-  Create new Azure AD users
+-  Assign admin roles to groups
+-  Set conditional access policies
+-  Enable security defaults
+-  Test user sign-in behavior
 
-**Skills:** Azure Networking, routing, private connectivity, DNS resolution
 
----
-
-### 5. **Monitoring & Alerts**
-- Set up Log Analytics Workspaces
-- Create performance and diagnostic alerts
-- Configure metrics, action groups, and email notifications
-
-**Skills:** Azure Monitor, metrics & alerts, log queries, operational awareness
 
 ---
 
-### 6. **Backup & Recovery**
-- Configure Recovery Services Vault
-- Enable VM backups and restore points
-- Simulate a VM restore scenario
+### 5. **Monitor + Backup + Automation**
+-  Create a Log Analytics workspace
+-  Connect VMs to monitor logs
+-  Create a Recovery Services vault for VM backup
+-  Create Automation Account
+-  Write a runbook to start/stop VMs
 
-**Skills:** Azure Backup, disaster recovery, fault tolerance
+
+
 
 ---
 
@@ -68,7 +65,7 @@ Each lab simulates real scenarios that an Azure Admin would encounter — from p
 By completing this lab series, I will:
 - Build confidence managing live Azure resources
 - Improve my efficiency in day-to-day admin tasks
-- Be fully prepared for the AZ-104 exam — both conceptually and practically
+- Be fully prepared for the AZ-104 exam, both conceptually and practically
 
 ---
 
