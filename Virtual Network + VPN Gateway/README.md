@@ -93,7 +93,7 @@ Export-Certificate -Cert $rootCert -FilePath "C:\MyP2SRootCert.cer"
 ```
  Issue: When opening the file in Notepad, I saw binary data (unreadable characters), which meant the certificate was exported in binary format instead of Base64.
   ![image](https://github.com/abarnes285/AZ-104-LABS/blob/05743f682dfd445de9176883ee64a184c1b86cc0/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2011.png)
-   ![image](https://github.com/abarnes285/AZ-104-LABS/blob/05743f682dfd445de9176883ee64a184c1b86cc0/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2012.png)
+  ![image](https://github.com/abarnes285/AZ-104-LABS/blob/05743f682dfd445de9176883ee64a184c1b86cc0/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2012.png)
 ## 🔄 Step 6: Export as Base64
 🛠️ Solution Attempted
 To resolve this, I updated the command to specify the export type explicitly:
@@ -115,7 +115,7 @@ After multiple failed attempts to export the certificate as Base64 using PowerSh
 5. In the left pane, navigate to:
  ![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2015.png)
 Certificates (Current User) > Personal > Certificates
-![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2016.png)
+ ![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2016.png)
 6. Locate the certificate (`MyP2SRootCert`) you created
 7. Right-click the cert → **All Tasks** → **Export**
 8. In the Certificate Export Wizard:
@@ -123,11 +123,11 @@ Certificates (Current User) > Personal > Certificates
 - Choose **Base-64 encoded X.509 (.CER)**
 - Choose a file path (e.g., Desktop) and export the file
   
-![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2017.png)
+ ![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2017.png)
 
 ### ✅ Result
 
 - The exported certificate can now be opened in a text editor (e.g., Notepad)
 - It will be human-readable and look like this:
-![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2019.png)
+ ![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2019.png)
 
