@@ -122,6 +122,7 @@ Certificates (Current User) > Personal > Certificates
 - Select **No, do not export the private key**
 - Choose **Base-64 encoded X.509 (.CER)**
 - Choose a file path (e.g., Desktop) and export the file
+  
 ![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2017.png)
 
 ### ✅ Result
