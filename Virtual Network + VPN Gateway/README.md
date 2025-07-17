@@ -131,3 +131,81 @@ Certificates (Current User) > Personal > Certificates
 - It will be human-readable and look like this:
  ![image](https://github.com/abarnes285/AZ-104-LABS/blob/be91dd1424d9df3d1c3d5ecabd414e2ff30fb6ee/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2019.png)
 
+## 🔌 Step 8: Install VPN Client & Connect to Azure
+
+After configuring the VPN Gateway and uploading the root certificate, I proceeded to install the VPN client provided by Azure and attempted to connect to the environment using both Windows and macOS.
+
+---
+
+### 🖥️ A. Install VPN Client on Windows
+
+1. From the Azure Portal:
+   - Go to the **VPN Gateway** resource
+   - Navigate to **Point-to-site configuration**
+   - Download the VPN client package (ZIP)
+
+2. Extract the ZIP file and run the installer (`VpnClientSetupAmd64.exe`)
+
+3. After installation:
+   - Open **Windows Settings** → **Network & Internet** → **VPN**
+   - You should see a new VPN profile pre-configured for your Azure environment
+
+   ![VPN Settings](https://github.com/abarnes285/AZ-104-LABS/blob/e3d22ff43831547f4076b03aaad8a860a3538a77/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2020.png)
+   ![VPN Profile in Windows](https://github.com/abarnes285/AZ-104-LABS/blob/e3d22ff43831547f4076b03aaad8a860a3538a77/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2022.png)
+
+---
+
+### ⚠️ Connection Issue
+
+When attempting to connect, I received a connection error:
+
+![VPN Connection Failed](https://github.com/abarnes285/AZ-104-LABS/blob/e3d22ff43831547f4076b03aaad8a860a3538a77/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2023.png)
+
+### 🔍 Root Cause
+
+- I initially **did not select OpenVPN (SSL)** as the tunnel type during the Point-to-Site VPN configuration in Azure.
+- OpenVPN is required for compatibility with most clients and devices (especially Mac).
+
+---
+
+### ✅ Resolution
+
+1. Went back to **Point-to-site configuration** in Azure
+2. Enabled **OpenVPN (SSL)** as the supported tunnel type
+3. Re-downloaded the VPN client after saving the config changes
+
+![Enable OpenVPN Tunnel](https://github.com/abarnes285/AZ-104-LABS/blob/e3d22ff43831547f4076b03aaad8a860a3538a77/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2024.png)
+
+---
+
+### 🍎 B. Connect to Azure VPN from macOS (Tunnelblick)
+
+1. Extract the ZIP package downloaded from Azure
+2. Open Tunnelblick on macOS
+3. Import the `.ovpn` configuration file found in the extracted folder
+
+4. Connect to the VPN using Tunnelblick
+
+![Tunnelblick VPN Connected](https://github.com/abarnes285/AZ-104-LABS/blob/e3d22ff43831547f4076b03aaad8a860a3538a77/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2025.png)
+
+> ✅ I was successfully able to connect to Azure from my Mac using OpenVPN.
+
+##✅ Final Outcome
+Verified:
+
+Hub-to-Spoke connectivity
+
+VPN connectivity via P2S
+
+VM-to-VM communication
+
+Gained deep understanding of:
+
+Hub-Spoke architecture
+
+Certificate handling
+
+VPN troubleshooting
+
+##📄 Summary
+This lab gave me hands-on experience in deploying secure hybrid connectivity in Azure using a hub-spoke network model and VPN Gateway. It required troubleshooting certificate formats, NSG rules, and tunnel types—all of which deepened my understanding of Azure networking.
