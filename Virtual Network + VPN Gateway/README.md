@@ -188,9 +188,9 @@ When attempting to connect, I received a connection error:
 
 ![Tunnelblick VPN Connected](https://github.com/abarnes285/AZ-104-LABS/blob/e3d22ff43831547f4076b03aaad8a860a3538a77/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2025.png)
 
-> ✅ I was successfully able to connect to Azure from my Mac using OpenVPN.
+ ✅ I was successfully able to connect to Azure from my Mac using OpenVPN.
 
-##✅ Final Outcome
+###✅ Final Outcome
 Verified:
 
 Hub-to-Spoke connectivity
@@ -207,5 +207,5 @@ Certificate handling
 
 VPN troubleshooting
 
-##📄 Summary
+###📄 Summary
 This lab gave me hands-on experience in deploying secure hybrid connectivity in Azure using a hub-spoke network model and VPN Gateway. It required troubleshooting certificate formats, NSG rules, and tunnel types—all of which deepened my understanding of Azure networking.
