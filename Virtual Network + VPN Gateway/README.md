@@ -76,7 +76,7 @@ $rootCert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
 | `-HashAlgorithm sha256`                     | Uses the SHA-256 hashing algorithm for encryption                    |
 | `-KeyLength 2048`                           | Specifies the key length (2048-bit RSA), Azure's recommended minimum |
 | `-CertStoreLocation "Cert:\CurrentUser\My"` | Location in the certificate store where it will be saved             |
-| `-KeyUsageProperty Sign -KeyUsage CertSign` | Marks the certificate for signing other certificates (acts as a CA)  |```
+| `-KeyUsageProperty Sign -KeyUsage CertSign` | Marks the certificate for signing other certificates (acts as a CA)  | <pre/>
 
 ## 🧾 Step 5: Export Certificate
 
