@@ -85,4 +85,19 @@ After creating the root certificate, I exported it using the following PowerShel
 
 ```powershell
 Export-Certificate -Cert $rootCert -FilePath "C:\MyP2SRootCert.cer"
+| Parameter            | Description                                                   |
+| -------------------- | ------------------------------------------------------------- |
+| `Export-Certificate` | PowerShell cmdlet used to export a certificate to a file      |
+| `-Cert $rootCert`    | Specifies the certificate object to export                    |
+| `-FilePath "C:\..."` | Defines the full path where the exported `.cer` file is saved |
 ```
+ Issue: When opening the file in Notepad, I saw binary data (unreadable characters), which meant the certificate was exported in binary format instead of Base64.
+  ![image](https://github.com/abarnes285/AZ-104-LABS/blob/05743f682dfd445de9176883ee64a184c1b86cc0/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2011.png)
+   ![image](https://github.com/abarnes285/AZ-104-LABS/blob/05743f682dfd445de9176883ee64a184c1b86cc0/Virtual%20Network%20%2B%20VPN%20Gateway/Images/image%2012.png)
+🛠️ Solution Attempted
+To resolve this, I updated the command to specify the export type explicitly:
+```Powershell
+Export-Certificate -Cert $rootCert -FilePath "C:\Users\andrew.barnes\Desktop\MyP2SRootCert.cer" -Type CERT
+```
+✅ This command was intended to export the certificate as a Base64-encoded X.509 file.
+However, the resulting file still appeared in binary format when opened with a text editor. This led to the next step: manual export via MMC, which is covered in Step 6
